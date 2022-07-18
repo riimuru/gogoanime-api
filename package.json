@@ -27,7 +27,7 @@
         "crypto-js": "^4.1.1",
         "express": "^4.17.1",
         "puppeteer": "^15.4.0",
-        "user-agents": "^1.0.1077"
+        "user-agents": "^1.0.1079"
     },
     "devDependencies": {
         "nodemon": "^2.0.15"
