@@ -624,6 +624,8 @@ git clone https://github.com/<your-username>/gogoanime.git
 Projects using this api or smaller parts of it:
 - [Animeflix](https://github.com/chirag-droid/animeflix) - A streaming service made with NextJs and TailwindCSS. It lets you search, watch animes without any ads with a beautiful ui. It can be self hosted or deployed online.
 
+- [miru](https://github.com/Dank-del/miru) - A cross platform anime streaming app made using flutter.
+
 > For other projects that are using this api or smaller parts of it, please reach out to me at my [discord rem#1723](https://discord.gg/775082234507427890) or join the [discord server](https://discord.gg/sP2k8vhjdb) or make a pull request to add it to the list.
 
 ## NEW API (v2) 🎉
