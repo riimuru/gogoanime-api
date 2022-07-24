@@ -626,6 +626,8 @@ Projects using this api or smaller parts of it:
 
 - [miru](https://github.com/Dank-del/miru) - A cross platform anime streaming app made using flutter.
 
+- [AnimeEZ](https://github.com/dhvitOP/AnimeEZ) - A Website Made using html and express as its server for streaming anime without any ads.
+
 > For other projects that are using this api or smaller parts of it, please reach out to me at my [discord rem#1723](https://discord.gg/775082234507427890) or join the [discord server](https://discord.gg/sP2k8vhjdb) or make a pull request to add it to the list.
 
 ## NEW API (v2) 🎉
