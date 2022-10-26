@@ -34,9 +34,6 @@
   </p>
 </p>
 
-> ### Note:
-> You might experience some delays or issues using [my hosted api on heroku](https://gogoanime.herokuapp.com/), so feel free to host it on your own site.
-
 <h1> Table of Contents </h1>
 
 - [Installation](#installation)
@@ -114,7 +111,7 @@ Below you'll find examples using [Fetch API](https://developer.mozilla.org/en-US
 | `page` (int) | **type 1 page limit: [1-331]. type 2: [1-139]. type 3: [1-22].**                                                                                                                              |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/recent-release")
+fetch("https://gogoanime.consumet.org/recent-release")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -143,7 +140,7 @@ Output >>
 | `page` (int) | page limit: [1-504] |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/popular")
+fetch("https://gogoanime.consumet.org/popular")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -172,7 +169,7 @@ Output >>
 | `page` (int)    | page limit may vary |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/search?keyw=naruto")
+fetch("https://gogoanime.consumet.org/search?keyw=naruto")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -201,7 +198,7 @@ Output >>
 | `page` (int)   | page limit may vary                                                                                                            |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/anime-movies")
+fetch("https://gogoanime.consumet.org/anime-movies")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -229,7 +226,7 @@ Output >>
 | `page` (int) | page limit [1-26]. ***-1** to fetch all the pages avaliable **Warning: Waiting time will be much longer.*** |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/top-airing")
+fetch("https://gogoanime.consumet.org/top-airing")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -316,7 +313,7 @@ Output >>
 &nbsp;
 
 ```js
-fetch("https://gogoanime.herokuapp.com/genre/action")
+fetch("https://gogoanime.consumet.org/genre/action")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -343,7 +340,7 @@ Output >>
 | `:id` (string) | **animeId can be found in every response body as can be seen in the above examples** |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/anime-details/naruto")
+fetch("https://gogoanime.consumet.org/anime-details/naruto")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -384,7 +381,7 @@ You might need the referer url to bypass 403 (Forbidden) HTTP code.
 #### VIDCDN
 
 ```js
-fetch("https://gogoanime.herokuapp.com/vidcdn/watch/naruto-episode-220")
+fetch("https://gogoanime.consumet.org/vidcdn/watch/naruto-episode-220")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -415,7 +412,7 @@ Output >>
 #### StreamSB
 
 ```js
-fetch("https://gogoanime.herokuapp.com/streamsb/watch/naruto-episode-220")
+fetch("https://gogoanime.consumet.org/streamsb/watch/naruto-episode-220")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -443,7 +440,7 @@ Output >>
 **Note: This is not available for all anime(s), so you might need to use another provider instead. VIDCDN and StreamSB are the most reliable**
 
 ```js
-fetch("https://gogoanime.herokuapp.com/fembed/watch/spy-x-family-episode-5")
+fetch("https://gogoanime.consumet.org/fembed/watch/spy-x-family-episode-5")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));
 ```
@@ -473,7 +470,7 @@ Output >>
 ### ~~Get Download URLs~~ (DEPRECATED)
 
 ```js
-fetch("https://gogoanime.herokuapp.com/download-links/spy-x-family-episode-9")
+fetch("https://gogoanime.consumet.org/download-links/spy-x-family-episode-9")
   .then((response) => response.json())
   .then((links) => console.log(links));
 ```
@@ -512,7 +509,7 @@ Or you can use the [download route](#download) to download the file.
 **Make sure to add `downloadLink` header to the headers**, which should contain the link received from the response above.
 
   ```js
-  fetch("https://gogoanime.herokuapp.com/download", {
+  fetch("https://gogoanime.consumet.org/download", {
     method: "GET",
     headers: {
       "downloadLink": "https://cdn34.anicache.net/user1342/eb0fc5c2a93ecb60b19b4d5802b578b3/EP.9.v0.1654358471.360p.mp4?token=-Dgjd_aQz6aIQKwY7hZyLQ&expires=1654562557&id=187373",
@@ -528,7 +525,7 @@ Then it will start downloading the file.
 | `page` (optional) | page number. Default is 0.                                                                                                     |
 
 ```js
-fetch("https://gogoanime.herokuapp.com/thread/spy-x-family-episode-9?page=1")
+fetch("https://gogoanime.consumet.org/thread/spy-x-family-episode-9?page=1")
   .then((response) => response.json())
   .then((thread) => console.log(thread));
 ```
