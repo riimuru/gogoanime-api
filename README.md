@@ -97,7 +97,7 @@ You can add `-d` flag to run the server in detached mode.
 ### Heroku
 Host your own instance of the api on heroku using the button below.
 
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/riimuru/gogoanime/tree/main)
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ryugenxd/gogoanime/tree/main)
 
 
 ## Routes
