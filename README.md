@@ -109,7 +109,7 @@ Host your own instance of the api on render using the button below.
 ### Railway
 Host your own instance of the api on railway using the button below.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Lg6DEp?referralCode=dv4TuD)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/VvpzYx?referralCode=qdFFSP)
 
 ## Routes
 Below you'll find examples using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) but you can use any other http library out there.
