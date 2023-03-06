@@ -44,6 +44,7 @@
   - [Railway](#railway)
 - [Routes](#routes)
   - [Get Recent Episodes](#get-recent-episodes)
+  - [Get By Filter](#get-by-filter)
   - [Get Popular Anime](#get-popular-anime)
   - [Get Anime Search](#get-anime-search)
   - [Get Anime Movies](#get-anime-movies)
@@ -138,6 +139,35 @@ Output >>
         "subOrDub": "SUB",
         "animeImg": "https://cdnimg.xyz/cover/deep-insanity-the-lost-child.png",
         "episodeUrl": "https://www1.gogoanime.cm//deep-insanity-the-lost-child-episode-9"
+    },
+    {...},
+    ...
+]
+```
+### Get By Filter
+
+| Parameter        | Description                      |
+| ------------     | ---------------------------------|
+| `page` (int)     | page limit may vary.             |
+| `season` (string)| `fall` `summer` `spring` `winter`|
+| `year` (int)     | `2019` `2020` `2021` `2022` etc.   |
+
+```js
+fetch("https://gogoanime.consumet.stream/filter")
+  .then((response) => response.json())
+  .then((animelist) => console.log(animelist));
+```
+
+Output >>
+
+```json
+[
+    {
+        "animeId": "jujutsu-kaisen-tv",
+        "animeTitle": "Jujutsu Kaisen (TV)",
+        "animeImg": "https://gogocdn.net/cover/jujutsu-kaisen-tv.png",
+        "releasedDate": "2020",
+        "animeUrl": "https://gogoanime.film///category/jujutsu-kaisen-tv"
     },
     {...},
     ...
