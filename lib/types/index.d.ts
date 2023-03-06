@@ -37,6 +37,13 @@ export declare function scrapeSearch(
  page: number = 1
 ): Promise<AnimeList[] | null | undefined>;
 
+
+export declare function scrapeFilter(
+ list: AnimeList[] | null | undefined,
+ year: string,
+ season: string,
+ page: number = 1
+): Promise<AnimeList[] | null | undefined>;
 /**
  *
  * @param animeId anime id to scrape the anime info
