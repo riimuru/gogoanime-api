@@ -40,7 +40,8 @@ export declare function scrapeSearch(
 
 export declare function scrapeFilter(
  list: AnimeList[] | null | undefined,
- year: string,
+ keyc: string,
+ year: number,
  season: string,
  page: number = 1
 ): Promise<AnimeList[] | null | undefined>;
