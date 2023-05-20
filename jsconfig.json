@@ -1,9 +1,8 @@
 {
  "compilerOptions": {
-  "module": "ESNext",
+  "module": "CommonJS",
   "moduleResolution": "Node",
-  "target": "ES2020",
-  "jsx": "react",
+  "target": "ESNext",
   "strictNullChecks": true,
   "strictFunctionTypes": true
  },

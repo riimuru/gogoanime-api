@@ -12,7 +12,7 @@ import {
     scrapeSearch,
     scrapeAnimeDetails,
     scrapeSeason,
-    scrapeMP4,
+    scrapeM3U8,
     scrapeStreamSB,
     scrapeFembed,
     scrapeThread,
@@ -206,7 +206,7 @@ app.get('/vidcdn/watch/:id', async(req, res) => {
     try {
         const id = req.params.id;
 
-        const data = await scrapeMP4({ id: id });
+        const data = await scrapeM3U8({ id: id });
 
         res.status(200).json(data);
     } catch (err) {
