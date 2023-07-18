@@ -445,13 +445,13 @@ export const scrapeAnimeDetails = async ({ id }) => {
   const $$ = cheerio.load(html.data);
 
   $$('#episode_related > li').each((i, el) => {
-
+    let episodeLocale = $(el).find(`div.cate`).text().toLowerCase() ;
    epList.push({
     episodeId: $(el).find('a').attr('href').split('/')[1],
     episodeNum: $(el).find(`div.name`).text().replace('EP ', ''),
     episodeUrl: BASE_URL + $(el).find(`a`).attr('href').trim(),
-    isSubbed:  $(el).find(`div.cate`).text().toLowerCase() == "sub",
-    isDubbed:  $(el).find(`div.cate`).text().toLowerCase() == "dub",
+    isSubbed:  episodeLocale == "sub",
+    isDubbed:  episodeLocale == "dub",
    });
   });
 
