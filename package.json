@@ -28,6 +28,6 @@
         "jest": "^29.5.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.21"
+        "nodemon": "^3.0.1"
     }
 }
